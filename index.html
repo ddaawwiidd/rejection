@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Rejection game</title>
+  <meta name="Rejection game. Test project to speed up learning JS" content="">
+  <meta name="dawid-jkw" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/my.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/reject.png">
+
+</head>
+<body onLoad="get()">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<div class="container">
+		<div class="row">
+			<div class="one-half column" style="margin-top: 10%">
+				<h1>Rejection game</h1>
+				<h5>You gotta lose to win.</h5>
+				<form>
+					<lable for="what">What did you ask?</lable>
+					<input class="u-full-width" type="text" placeholder="I asked girl from coffee shop for date." id="question">
+			  
+					<input class="button" type="button" value="Accepted" onclick="storeAccepted()">
+					<input class="button-primary" type="button" value="Rejected" onclick="storeRejected()">
+				</form>
+				<div id="score">
+					<span>My score:</span>
+					<div id="points"></div>
+				</div>
+				</div>
+			
+			<div class="one-half column" style="margin-top: 26%">
+			<p>Rejection Therapy is a social self-help game created by Jason Comely where being rejected by another person or group is the sole winning condition. Any rejection is scored 10 points vs. 1 point for any request that is accepted.</br></br> The player can attempt any kind of social rejection, or try a suggestion from one of the Rejection Therapy suggestion cards available. The game can be played for any length of time, although many undertake the 30 Day Challenge.</br></br>
+				The purpose of playing the game is to overcome the fear of rejection through controlled, forced exposure. By this means, players hope to adapt physically to the stresses of rejection.</p>
+			</div>
+		</div>
+		
+		<h4>Results</h4>
+			
+		<div class="row">
+			<div class="one-half column" style="margin-top: 0%">
+				<h6>Accepted</h6>
+				<div id="acceptedQ"></div>
+			</div>
+			<div class="one-half column" style="margin-top: 0%">
+				<h6>Rejected</h6>
+				<div id="rejectedQ"></div>
+			</div>
+			<input class="button" id="clearStorage" type="button" value="Clear storage" onclick="clearStorage()" style="float: right;">
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footer">
+			<a target="_blank" href="https://medium.com/javascript-scene/the-best-way-to-learn-to-code-is-to-code-learn-app-architecture-by-building-apps-7ec029db6e00#.55qiwr8vy">Project inspired by this post. Thanks Eric Elliott.</a>
+			<a target="_blank" href="http://www.dawid-jkw.space/">Created by dawid-jkw.</a>
+		</div>
+		
+	</footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="js/js.js"></script>
+</body>
+</html>
